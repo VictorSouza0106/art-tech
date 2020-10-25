@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-carrosel',
@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarroselComponent implements OnInit {
 
+  @Input()
+  sender:string = '';
+  
+  @Output()
+  emitter:EventEmitter<string> = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
+    this.showInput();
+    this.emitirDados();
+  }
+
+  showInput(){
+    console.log(this.sender);
+  }
+
+  emitirDados(){
+    this.emitter.emit("Bom dia");
   }
 
 }

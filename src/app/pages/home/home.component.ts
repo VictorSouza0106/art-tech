@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  showOutput(mensagem:string){
+    console.log(mensagem);
+  }
+
 }
