@@ -1,9 +1,9 @@
 <div class="w-100 card">
-    <div class="fundo"></div>
-    <div class="fundo"></div>
+    <div class="fundo" [ngStyle]="{'background': sender.background}"></div>
+    <div class="fundo" [ngStyle]="{'background': sender.background}"></div>
     <div class="conteudo">
-        <h1>Bem-vindo(a) ao Art Map</h1>
-        <img src="../../../assets/images/primeira.svg" alt="arte mapa" />
-        <h1></h1>
+        <h1>{{sender.texto_cima}}</h1>
+        <img src={{sender.path_image}} alt="arte mapa" />
+        <h1>{{sender.texto_baixo}}</h1>
     </div>
 </div>
