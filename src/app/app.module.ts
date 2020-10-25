@@ -8,18 +8,21 @@ import { HomeComponent } from './pages/home/home.component';
 import { MatIconModule } from '@angular/material';
 import { CarroselComponent } from './pages/carrosel/carrosel.component';
 import { MapViewComponent } from './map-view/map-view.component';
+import { CardComponent } from './pages/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CarroselComponent,
-    MapViewComponent
+    MapViewComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
 
     //MAT IMPORT
     MatIconModule,
