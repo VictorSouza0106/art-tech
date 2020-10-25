@@ -1,8 +1,51 @@
 .card{
-    position: relative;
+    width: 100vw;
+    height: 330px;
 
-    border: 1px solid red;
+    margin: 50px auto;
+
+    position: relative;
+    max-width: 320px;
+    border: none !important;
 }
+
 .card .fundo{
-    background: #0093FD;
+    width: 90%;
+    height: 90%;
+
+    margin: 10px ;
+
+    position: absolute;
+
+    background: rgba(0, 147, 253, 0.5);
+    
+    z-index: 1;
+    border-radius: 10px;
+}
+.card .fundo:first-child{
+    right: 0;
+}
+.card .fundo:nth-child(2){
+    bottom: 0;
+}
+
+.card .conteudo{
+    height: 100%;
+
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    z-index: 10;
+}
+.card .conteudo h1{
+    font-size: 1.3rem;
+}
+.card .conteudo img{
+    width: 60%;
+    height: 50%;
+    margin: 3px auto;
+
+    border-radius: 10px;
 }

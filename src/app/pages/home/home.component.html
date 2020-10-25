@@ -1,1 +1,48 @@
-<app-card></app-card>
+<!-- <app-carrosel
+    [sender] = "'Praças'"
+    (emitter) = "showOutput($event)"
+    (click) = "showOutput('mapas')"
+></app-carrosel> -->
+
+<app-card
+    [sender] = "{
+        'texto_cima': 'bem-vindo(a) ao Art Map',
+        'path_image': '../../../assets/images/primeira.svg',
+        'texto_baixo': '',
+        'background': 'rgba(0, 147, 253, 0.5)'
+    }"
+></app-card>
+<app-card
+    [sender] = "{
+        'texto_cima': 'Visite lugares',
+        'path_image': '../../../assets/images/segunda.svg',
+        'texto_baixo': 'E conheça novas obras',
+        'background': 'rgba(255, 248, 84, 0.5)'
+    }"
+></app-card>
+<app-card
+    [sender] = "{
+        'texto_cima': 'Local',
+        'path_image': '../../../assets/images/quarta.png',
+        'texto_baixo': 'Ou remoto',
+        'background': 'rgba(26, 206, 141, 0.5)'
+    }"
+></app-card>
+<app-card
+    [sender] = "{
+        'texto_cima': 'Registre seu encontro',
+        'path_image': '../../../assets/images/terceira.png',
+        'texto_baixo': 'Com a obra',
+        'background': 'rgba(74, 255, 103, 0.5)'
+    }"
+></app-card>
+<app-card
+    [sender] = "{
+        'texto_cima': 'Viva uma aventura',
+        'path_image': '../../../assets/images/decima.svg',
+        'texto_baixo': 'Na cidade',
+        'background': 'rgba(255, 172, 74, 0.5) '
+    }"
+></app-card>
+
+<button class="d-block btn w-75 my-4 mx-auto" type="button" style="background: #F2994A;font-size: 1.4rem">descobrir</button>
