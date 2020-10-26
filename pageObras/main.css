@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 100vw;
+    padding: 0 !important;
+}
+.informacoes{
+    width: 100%;
+
+    margin-top: 30px;
+
+    border: 1px solid #ccc;
+}
+.informacoes div{
+    width: 100%;
+
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-header, .card-footer{
+    background: #E6F7FB;
+}
+.card-header h3{
+    color: #4D6F80;
+}
+h6{
+    background-color: #4D6F80;
+    color: #fff;
+}
+.informacoes div{
+    background: #E6F7FB;
+    color: #4D6F80;
+}
